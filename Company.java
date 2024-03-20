@@ -23,8 +23,9 @@ public class Company {
     /**
      * Constructor of class Company
      */
-    public Company() {
-
+    public Company(ArrayList<User> clients,ArrayList<User> sellers) {
+        this.clients = clients;
+        this.sellers = sellers;
     }
 
     /**
@@ -33,7 +34,7 @@ public class Company {
      * @return This company clients.
      */
     public List<User> getClients() {
-        return null;         // dummy implementation
+        return this.clients;         // dummy implementation
     }
 
     /**
@@ -42,7 +43,7 @@ public class Company {
      * @return This company sellers.
      */
     public List<User> getSellers() {
-        return null;         // dummy implementation
+        return this.sellers;         // dummy implementation
     }
 
     /**
