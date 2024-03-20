@@ -19,10 +19,14 @@ public class PropertyTest
     public PropertyTest()
     {
     }
+    
     @Test
     public void testConstrutor(){
-         Property property = new Property(null, 0.0);
+         Property property1 = new Property("T3 Monte Belo", 150000.0);
+         assertEquals("T3 Monte Belo", property1.getDescription());
+         assertEquals(150000.0, property1.getPrice());
     }
+    
     /**
      * Sets up the test fixture.
      *
