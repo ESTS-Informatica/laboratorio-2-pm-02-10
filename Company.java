@@ -125,7 +125,12 @@ public class Company {
      * @return true If the request succeeds, false otherwise.
      */
     public boolean createSell(User client, User seller, Property property) {
-        return true;         // dummy implementation
+        if(client!=null && seller!= null && property != null){
+            Sell sell = new Sell(client, seller, property);
+            sells.add(sell);
+            return true; 
+        }
+        return false;
     }
 
     /**

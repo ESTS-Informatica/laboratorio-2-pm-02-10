@@ -154,6 +154,13 @@ public class CompanyTest
         assertEquals(false,company1.registerProperty(property));
     }
     
+    //Nivel 5
+    
+    @Test
+    public void testCreateSell(){
+        //assertEquals(true, company1.createSell(new Sell()));
+    }
+    
     /**
      * Tears down the test fixture.
      *
